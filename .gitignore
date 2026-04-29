@@ -1,0 +1,41 @@
+# Dependencies
+node_modules
+
+# Build
+dist
+dist-ssr
+*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env (credenciais / URLs privadas — não commitar)
+.env
+.env.*
+!.env.example
+
+# Test / coverage
+coverage
+*.lcov
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE (opcional: mantenha só o que não quiser versionar)
+.idea
+*.swp
+*.swo
+*~
+
+# TypeScript incremental (se usar composite mais tarde)
+*.tsbuildinfo
+
+# Debug / misc
+.cache

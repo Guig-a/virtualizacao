@@ -1,0 +1,180 @@
+:root {
+  color-scheme: dark;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.demo-page {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.demo-title {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.demo-sub {
+  margin: 0 0 20px;
+  color: #8b949e;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.demo-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.demo-tab {
+  border-radius: 999px;
+  padding: 8px 16px;
+  border: 1px solid #30363d;
+  background: #161b22;
+  color: #c9d1d9;
+  font-size: 13px;
+}
+
+.demo-tab:hover {
+  background: #21262d;
+}
+
+.demo-tab--active {
+  background: #238636;
+  border-color: #238636;
+  color: #fff;
+}
+
+.demo-panel {
+  animation: demo-fade-in 0.22s ease;
+}
+
+@keyframes demo-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.demo-hint {
+  margin: 0 0 12px;
+  color: #8b949e;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.demo-hint--warn {
+  color: #d29922;
+}
+
+.demo-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.demo-metrics strong {
+  color: #58a6ff;
+  font-weight: 600;
+}
+
+.demo-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.demo-actions button {
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  background: #21262d;
+  color: #e6edf3;
+  padding: 8px 14px;
+  font-size: 13px;
+}
+
+.demo-actions button:hover {
+  background: #30363d;
+}
+
+.demo-unmounted {
+  padding: 40px;
+  text-align: center;
+  color: #8b949e;
+  border: 1px dashed #30363d;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.demo-panel--code {
+  padding: 4px 0 24px;
+}
+
+.demo-code-title {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.demo-leak-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #c9d1d9;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.demo-leak-list li {
+  margin-bottom: 12px;
+}
+
+.demo-leak-list code {
+  font-size: 12px;
+  background: #21262d;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.demo-footer-note {
+  margin: 16px 0 0;
+  font-size: 13px;
+  color: #8b949e;
+  line-height: 1.45;
+}
+
+/* View Transitions (Chrome): suaviza troca de aba quando document.startViewTransition é usado */
+::view-transition-group(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+  animation-duration: 0.25s;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
